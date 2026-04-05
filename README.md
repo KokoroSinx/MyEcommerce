@@ -55,7 +55,7 @@ Run:
 docker-compose up -d
 ```
 ✨ Core Improvements
-1. Pluggable Storage System
+1. Pluggable Storage System [https://kokorosinx.github.io/2026/04/05/File-Upload-Storage-Strategy-in-My-E-commerce/](https://kokorosinx.github.io/2026/04/05/File-Upload-Storage-Strategy-in-My-E-commerce/)
 
 Refactored file storage:
 
@@ -68,7 +68,7 @@ Easy to switch storage backend
 Better scalability
 Cloud-native readiness
 
-2. Cache & Failure Handling Strategy
+2. Cache & Failure Handling Strategy [https://kokorosinx.github.io/2026/02/18/Cache-Breakdown-Penetration-and-Avalanche/](https://kokorosinx.github.io/2026/02/18/Cache-Breakdown-Penetration-and-Avalanche/)
 
 Designed a robust caching layer using Redis:
 
@@ -81,7 +81,7 @@ Cache avalanche → randomized TTL
 Consistency vs performance
 DB pressure vs cache freshness
 
-3. Asynchronous Processing (RabbitMQ)
+3. Asynchronous Processing (RabbitMQ) [https://kokorosinx.github.io/2026/04/05/Refactoring-a-Monolithic-Order-System-into-an-Event-Driven-Architecture-with-RabbitMQ/](https://kokorosinx.github.io/2026/04/05/Refactoring-a-Monolithic-Order-System-into-an-Event-Driven-Architecture-with-RabbitMQ/)
 
 Introduced message queue for order processing:
 
