@@ -51,8 +51,9 @@ services:
       - "15672:15672"
 ```
 Run:
-
+```bash
 docker-compose up -d
+```
 ✨ Core Improvements
 1. Pluggable Storage System
 
@@ -66,6 +67,7 @@ Easy to switch storage backend
 
 Better scalability
 Cloud-native readiness
+
 2. Cache & Failure Handling Strategy
 
 Designed a robust caching layer using Redis:
@@ -78,6 +80,7 @@ Cache avalanche → randomized TTL
 
 Consistency vs performance
 DB pressure vs cache freshness
+
 3. Asynchronous Processing (RabbitMQ)
 
 Introduced message queue for order processing:
