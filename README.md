@@ -49,3 +49,51 @@ services:
     ports:
       - "5672:5672"
       - "15672:15672"
+```
+Run:
+
+docker-compose up -d
+✨ Core Improvements
+1. Pluggable Storage System
+
+Refactored file storage:
+
+Replace local file system with object storage (S3 / MinIO)
+Unified access layer
+Easy to switch storage backend
+
+👉 Benefit:
+
+Better scalability
+Cloud-native readiness
+2. Cache & Failure Handling Strategy
+
+Designed a robust caching layer using Redis:
+
+Cache penetration → null value caching
+Cache breakdown → mutex lock
+Cache avalanche → randomized TTL
+
+👉 Trade-offs considered:
+
+Consistency vs performance
+DB pressure vs cache freshness
+3. Asynchronous Processing (RabbitMQ)
+
+Introduced message queue for order processing:
+
+Order creation → message queue → async handling
+Decouples system components
+Improves system throughput
+
+👉 Benefit:
+
+Better scalability under high concurrency
+Reduced response latency
+🧠 Design Highlights
+Layered architecture (Controller → Service → DAO)
+DTO / VO separation
+Clear responsibility boundaries
+📌 Notes
+
+This project is inspired by a tutorial project, but significantly refactored with a focus on production-level backend design.
